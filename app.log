@@ -1,0 +1,486 @@
+2024-04-11 15:17:32.489  INFO 5940 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 5940 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:17:32.490  INFO 5940 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:17:32.941  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:17:32.961  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:17:33.117  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:17:33.119  INFO 5940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:17:33.120  INFO 5940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:17:33.159  INFO 5940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:17:33.160  INFO 5940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 663 ms
+2024-04-11 15:17:33.396  INFO 5940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:17:33.401  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-04-11 15:17:33.449  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-04-11 15:17:33.450  INFO 5940 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:17:33.605  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-04-11 15:17:33.605  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : no existe la relación «f02_interfaces», omitiendo
+2024-04-11 15:17:33.606  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-04-11 15:17:33.607  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : no existe la relación «f03_plantilla», omitiendo
+2024-04-11 15:17:33.608  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-04-11 15:17:33.608  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : no existe la relación «f04_campos», omitiendo
+2024-04-11 15:17:33.610  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-04-11 15:17:33.610  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : la tabla «f01_entidad» no existe, omitiendo
+2024-04-11 15:17:33.611  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-04-11 15:17:33.612  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : la tabla «f02_interfaces» no existe, omitiendo
+2024-04-11 15:17:33.615  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-04-11 15:17:33.616  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : la tabla «f03_plantilla» no existe, omitiendo
+2024-04-11 15:17:33.618  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-04-11 15:17:33.619  WARN 5940 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : la tabla «f04_campos» no existe, omitiendo
+2024-04-11 15:17:33.690  INFO 5940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:17:33.691  INFO 5940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:17:33.887  WARN 5940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:17:33.949 DEBUG 5940 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:17:33.980 DEBUG 5940 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:17:34.290 DEBUG 5940 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:17:34.296 DEBUG 5940 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:17:34.424  INFO 5940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:17:34.430  INFO 5940 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:17:34.451  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:17:34.455  INFO 5940 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 2.029 seconds (JVM running for 1721.298)
+2024-04-11 15:17:34.458  INFO 5940 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-11 15:18:48.267  INFO 5940 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-11 15:18:48.268  INFO 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-11 15:18:48.269 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-11 15:18:48.269 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-11 15:18:48.269 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-11 15:18:48.271 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a196947
+2024-04-11 15:18:48.272 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2bc68f2e
+2024-04-11 15:18:48.272 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-11 15:18:48.273  INFO 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-11 15:18:48.274 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-04-11 15:18:48.285 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-04-11 15:18:48.317 DEBUG 5940 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-04-11 15:18:48.505 DEBUG 5940 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/documentation/swagger-config", parameters={}
+2024-04-11 15:18:48.507 DEBUG 5940 --- [http-nio-8083-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-04-11 15:18:48.518 DEBUG 5940 --- [http-nio-8083-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-04-11 15:18:48.521 DEBUG 5940 --- [http-nio-8083-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/documentation/swagger-config, oauth2RedirectUrl=http://localhost:8083/swagger-ui/oauth2- (truncated)...]
+2024-04-11 15:18:48.536 DEBUG 5940 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:18:48.559 DEBUG 5940 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/documentation/Multi%20Servicio", parameters={}
+2024-04-11 15:18:48.564 DEBUG 5940 --- [http-nio-8083-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.MultipleOpenApiWebMvcResource#openapiJson(HttpServletRequest, String, String, Locale)
+2024-04-11 15:18:49.063  INFO 5940 --- [http-nio-8083-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 478 ms
+2024-04-11 15:18:49.087 DEBUG 5940 --- [http-nio-8083-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-04-11 15:18:49.087 DEBUG 5940 --- [http-nio-8083-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"OpenAPI definition","version":"v0"},"servers":[{"url":"http://lo (truncated)..."]
+2024-04-11 15:18:49.088 DEBUG 5940 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:18:51.749 DEBUG 5940 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/documentation/Multi%20Servicio", parameters={}
+2024-04-11 15:18:51.750 DEBUG 5940 --- [http-nio-8083-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.MultipleOpenApiWebMvcResource#openapiJson(HttpServletRequest, String, String, Locale)
+2024-04-11 15:18:51.766 DEBUG 5940 --- [http-nio-8083-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, application/yaml] and supported [application/json]
+2024-04-11 15:18:51.767 DEBUG 5940 --- [http-nio-8083-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"OpenAPI definition","version":"v0"},"servers":[{"url":"http://lo (truncated)..."]
+2024-04-11 15:18:51.768 DEBUG 5940 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:18:54.449 DEBUG 5940 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/entidad/create", parameters={}
+2024-04-11 15:18:54.451 DEBUG 5940 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#entidadSaveUdpate(Entidad)
+2024-04-11 15:18:54.458 DEBUG 5940 --- [http-nio-8083-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Entidad(id=null, nombre=string, type=REST, interfaces=null)]
+2024-04-11 15:18:54.475 DEBUG 5940 --- [http-nio-8083-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:18:54.477 DEBUG 5940 --- [http-nio-8083-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Entidad(id=1, nombre=string, type=REST, interfaces=null)]
+2024-04-11 15:18:54.480 DEBUG 5940 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:19:08.614 DEBUG 5940 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/entidad/interfaz", parameters={}
+2024-04-11 15:19:08.616 DEBUG 5940 --- [http-nio-8083-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#interfazSaveUdpate(Interfaces)
+2024-04-11 15:19:08.622 DEBUG 5940 --- [http-nio-8083-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Interfaces(id=null, entidadId=1, entidad=null, operationType=CONSULTA, methodType=POST, endpoint=htt (truncated)...]
+2024-04-11 15:19:08.657 DEBUG 5940 --- [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:19:08.745 DEBUG 5940 --- [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [java.lang.StackOverflowError]
+2024-04-11 15:19:08.746 DEBUG 5940 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:22:02.778 DEBUG 5940 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:22:02.779 DEBUG 5940 --- [http-nio-8083-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:22:02.785 DEBUG 5940 --- [http-nio-8083-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:22:02.896 DEBUG 5940 --- [http-nio-8083-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hubmultiservice.servicesentity.controller.GlobalExceptionHandler#handleAllExceptions(Exception, WebRequest)
+2024-04-11 15:22:02.899 DEBUG 5940 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:22:02.900 DEBUG 5940 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hubmultiservice.servicesentity.models.error.ErrorResponse@892cc3aa]
+2024-04-11 15:22:02.901  WARN 5940 --- [http-nio-8083-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.StackOverflowError]
+2024-04-11 15:22:02.902 DEBUG 5940 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-04-11 15:23:33.078  INFO 5940 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-11 15:23:33.214  INFO 5940 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-11 15:23:33.215  INFO 5940 --- [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-11 15:23:33.223  INFO 5940 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:23:33.224  INFO 5940 --- [Thread-15] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-11 15:23:33.288  INFO 5940 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-04-11 15:23:33.291  INFO 5940 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-04-11 15:23:33.573  INFO 5940 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 5940 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:23:33.574  INFO 5940 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:23:34.053  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:23:34.073  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:23:34.220  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:23:34.222  INFO 5940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:23:34.222  INFO 5940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:23:34.257  INFO 5940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:23:34.258  INFO 5940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2024-04-11 15:23:34.355  INFO 5940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:23:34.363  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-04-11 15:23:34.447  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-04-11 15:23:34.448  INFO 5940 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:23:34.690  INFO 5940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:23:34.690  INFO 5940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:23:35.009  WARN 5940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:23:35.050 DEBUG 5940 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:23:35.073 DEBUG 5940 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:23:35.299 DEBUG 5940 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:23:35.306 DEBUG 5940 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:23:35.454  INFO 5940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:23:35.458  INFO 5940 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:23:35.482  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:23:35.490  INFO 5940 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 1.972 seconds (JVM running for 2082.333)
+2024-04-11 15:23:35.494  INFO 5940 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-11 15:23:47.668  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 26964 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:23:47.671  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:23:47.780  INFO 26964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-11 15:23:47.781  INFO 26964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-11 15:23:49.924  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:23:50.046  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:23:51.266  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:23:51.283  INFO 26964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:23:51.284  INFO 26964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:23:51.460  INFO 26964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:23:51.461  INFO 26964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3678 ms
+2024-04-11 15:23:52.100  INFO 26964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:23:52.225  INFO 26964 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-11 15:23:52.475  INFO 26964 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 15:23:52.611  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-11 15:23:52.826  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-11 15:23:52.867  INFO 26964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:23:54.100  INFO 26964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:23:54.115  INFO 26964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:23:54.843  WARN 26964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:23:55.048 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:23:55.198 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:23:56.828 DEBUG 26964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:23:56.878 DEBUG 26964 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:23:57.755  INFO 26964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:23:57.768  INFO 26964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:23:57.865  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:23:57.959  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 10.94 seconds (JVM running for 12.295)
+2024-04-11 15:24:05.515  INFO 26964 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-11 15:24:05.516  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-11 15:24:05.517 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-11 15:24:05.517 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-11 15:24:05.518 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-11 15:24:05.520 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@9dca4986
+2024-04-11 15:24:05.521 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@fbc682ea
+2024-04-11 15:24:05.522 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-11 15:24:05.523  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-04-11 15:24:05.539 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:24:05.550 DEBUG 26964 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:24:05.659 DEBUG 26964 --- [http-nio-8083-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:24:05.726 DEBUG 26964 --- [http-nio-8083-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hubmultiservice.servicesentity.controller.GlobalExceptionHandler#handleAllExceptions(Exception, WebRequest)
+2024-04-11 15:24:27.982 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:24:27.988 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hubmultiservice.servicesentity.models.error.ErrorResponse@825615d8]
+2024-04-11 15:24:28.022  WARN 26964 --- [http-nio-8083-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.util.NoSuchElementException: No value present]
+2024-04-11 15:24:28.024 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-04-11 15:24:32.798 DEBUG 26964 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-04-11 15:24:32.806 DEBUG 26964 --- [http-nio-8083-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-04-11 15:24:32.845 DEBUG 26964 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-04-11 15:24:33.057 DEBUG 26964 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/documentation/swagger-config", parameters={}
+2024-04-11 15:24:33.058 DEBUG 26964 --- [http-nio-8083-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-04-11 15:24:33.108 DEBUG 26964 --- [http-nio-8083-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-04-11 15:24:33.110 DEBUG 26964 --- [http-nio-8083-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/documentation/swagger-config, oauth2RedirectUrl=http://localhost:8083/swagger-ui/oauth2- (truncated)...]
+2024-04-11 15:24:33.115 DEBUG 26964 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:24:33.148 DEBUG 26964 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/documentation/Multi%20Servicio", parameters={}
+2024-04-11 15:24:33.152 DEBUG 26964 --- [http-nio-8083-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.MultipleOpenApiWebMvcResource#openapiJson(HttpServletRequest, String, String, Locale)
+2024-04-11 15:24:33.871  INFO 26964 --- [http-nio-8083-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 695 ms
+2024-04-11 15:24:33.930 DEBUG 26964 --- [http-nio-8083-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-04-11 15:24:33.932 DEBUG 26964 --- [http-nio-8083-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"OpenAPI definition","version":"v0"},"servers":[{"url":"http://lo (truncated)..."]
+2024-04-11 15:24:33.940 DEBUG 26964 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:24:34.123 DEBUG 26964 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/documentation/Multi%20Servicio", parameters={}
+2024-04-11 15:24:34.127 DEBUG 26964 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.MultipleOpenApiWebMvcResource#openapiJson(HttpServletRequest, String, String, Locale)
+2024-04-11 15:24:34.198 DEBUG 26964 --- [http-nio-8083-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, application/yaml] and supported [application/json]
+2024-04-11 15:24:34.207 DEBUG 26964 --- [http-nio-8083-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"OpenAPI definition","version":"v0"},"servers":[{"url":"http://lo (truncated)..."]
+2024-04-11 15:24:34.210 DEBUG 26964 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:24:44.176 DEBUG 26964 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/entidad/create", parameters={}
+2024-04-11 15:24:44.177 DEBUG 26964 --- [http-nio-8083-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#entidadSaveUdpate(Entidad)
+2024-04-11 15:24:44.182 DEBUG 26964 --- [http-nio-8083-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Entidad(id=null, nombre=string, type=REST, interfaces=null)]
+2024-04-11 15:24:44.237 DEBUG 26964 --- [http-nio-8083-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:24:44.238 DEBUG 26964 --- [http-nio-8083-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Entidad(id=1, nombre=string, type=REST, interfaces=null)]
+2024-04-11 15:24:44.240 DEBUG 26964 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:24:59.457 DEBUG 26964 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/entidad/interfaz", parameters={}
+2024-04-11 15:24:59.458 DEBUG 26964 --- [http-nio-8083-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#interfazSaveUdpate(Interfaces)
+2024-04-11 15:24:59.464 DEBUG 26964 --- [http-nio-8083-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Interfaces(id=null, entidadId=1, entidad=null, operationType=CONSULTA, methodType=POST, endpoint=htt (truncated)...]
+2024-04-11 15:24:59.580 DEBUG 26964 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:24:59.680 DEBUG 26964 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [java.lang.StackOverflowError]
+2024-04-11 15:24:59.683 DEBUG 26964 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-11 15:25:19.726 DEBUG 26964 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:25:19.728 DEBUG 26964 --- [http-nio-8083-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:25:19.730 DEBUG 26964 --- [http-nio-8083-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:25:31.584 DEBUG 26964 --- [http-nio-8083-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hubmultiservice.servicesentity.controller.GlobalExceptionHandler#handleAllExceptions(Exception, WebRequest)
+2024-04-11 15:25:40.337 DEBUG 26964 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:25:40.338 DEBUG 26964 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hubmultiservice.servicesentity.models.error.ErrorResponse@216bd241]
+2024-04-11 15:25:40.339  WARN 26964 --- [http-nio-8083-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.StackOverflowError]
+2024-04-11 15:25:40.341 DEBUG 26964 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-04-11 15:26:01.700  INFO 26964 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-11 15:26:01.866  INFO 26964 --- [Thread-9] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-11 15:26:01.868  INFO 26964 --- [Thread-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-11 15:26:01.887  INFO 26964 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:26:01.903  INFO 26964 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-11 15:26:01.915  INFO 26964 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-11 15:26:02.301  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 26964 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:26:02.302  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:26:03.339  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:26:03.415  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:26:04.619  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:26:04.622  INFO 26964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:26:04.623  INFO 26964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:26:04.721  INFO 26964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:26:04.723  INFO 26964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2417 ms
+2024-04-11 15:26:05.017  INFO 26964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:26:05.039  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-11 15:26:05.309  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-11 15:26:05.379  INFO 26964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:26:05.992  INFO 26964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:26:05.995  INFO 26964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:26:06.917  WARN 26964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:26:07.048 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:26:07.089 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:26:07.642 DEBUG 26964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:26:07.686 DEBUG 26964 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:26:08.253  INFO 26964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:26:08.276  INFO 26964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:26:08.382  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:26:08.406  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 6.157 seconds (JVM running for 142.741)
+2024-04-11 15:26:08.427  INFO 26964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-11 15:26:12.374  INFO 26964 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-11 15:26:12.375  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-11 15:26:12.376 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-11 15:26:12.377 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-11 15:26:12.377 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-11 15:26:12.379 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5412aa9c
+2024-04-11 15:26:12.381 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@cac8bd90
+2024-04-11 15:26:12.382 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-11 15:26:12.383  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-04-11 15:26:12.385 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:26:12.387 DEBUG 26964 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:26:12.402 DEBUG 26964 --- [http-nio-8083-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:26:47.690 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:26:47.692 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[paisPaís de Prueba, apellidoGómez, paisPaís de Prueba<EOL>    , apellidoPérez, edad25, calleAvenida Ver (truncated)...]
+2024-04-11 15:26:47.695  WARN 26964 --- [http-nio-8083-exec-1] o.h.e.loading.internal.LoadContexts      : HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@815f201a<rs=HikariProxyResultSet@303973051 wrapping org.postgresql.jdbc.PgResultSet@54ae47bf>
+2024-04-11 15:26:47.696  WARN 26964 --- [http-nio-8083-exec-1] o.h.e.l.internal.CollectionLoadContext   : HHH000160: On CollectionLoadContext#cleanup, localLoadingCollectionKeys contained [1] entries
+2024-04-11 15:26:47.697 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:30:46.039  INFO 26964 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-04-11 15:30:46.214  INFO 26964 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-11 15:30:46.216  INFO 26964 --- [Thread-11] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-11 15:30:46.234  INFO 26964 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:30:46.241  INFO 26964 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-04-11 15:30:46.252  INFO 26964 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-04-11 15:30:46.400  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 26964 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:30:46.401  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:30:46.911  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:30:46.934  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:30:47.121  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:30:47.123  INFO 26964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:30:47.123  INFO 26964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:30:47.165  INFO 26964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:30:47.166  INFO 26964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 761 ms
+2024-04-11 15:30:47.303  INFO 26964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:30:47.310  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-04-11 15:30:47.386  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-04-11 15:30:47.387  INFO 26964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:30:47.850  INFO 26964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:30:47.883  INFO 26964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:30:49.045  WARN 26964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:30:49.287 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:30:49.391 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:30:49.839 DEBUG 26964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:30:49.855 DEBUG 26964 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:30:50.113  INFO 26964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:30:50.126  INFO 26964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:30:50.184  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:30:50.197  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 3.866 seconds (JVM running for 424.533)
+2024-04-11 15:30:50.203  INFO 26964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-11 15:31:01.748  INFO 26964 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-11 15:31:01.749  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-11 15:31:01.751 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-11 15:31:01.752 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-11 15:31:01.753 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-11 15:31:01.758 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@bc8ebae4
+2024-04-11 15:31:01.763 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@44ccf214
+2024-04-11 15:31:01.766 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-11 15:31:01.769  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2024-04-11 15:31:01.771 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:31:01.776 DEBUG 26964 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:31:01.797 DEBUG 26964 --- [http-nio-8083-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:31:09.112 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:31:09.113 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[nombreJuan, apellidoPérez, edad30, calleCalle Falsa 123, ciudadCiudad de Ejemplo, paisPaís de Prueb (truncated)...]
+2024-04-11 15:31:09.115 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:40:16.744  INFO 26964 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-11 15:40:16.895  INFO 26964 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-11 15:40:16.896  INFO 26964 --- [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-11 15:40:16.909  INFO 26964 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:40:16.914  INFO 26964 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-04-11 15:40:16.919  INFO 26964 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-04-11 15:40:17.219  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 26964 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:40:17.220  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:40:17.645  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:40:17.668  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:40:17.966  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:40:17.968  INFO 26964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:40:17.969  INFO 26964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:40:18.043  INFO 26964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:40:18.047  INFO 26964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 823 ms
+2024-04-11 15:40:18.265  INFO 26964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:40:18.284  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-04-11 15:40:18.427  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-04-11 15:40:18.428  INFO 26964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:40:19.719  INFO 26964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:40:19.760  INFO 26964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:40:20.764  WARN 26964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:40:21.004 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:40:21.066 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:40:21.939 DEBUG 26964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:40:21.973 DEBUG 26964 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:40:22.403  INFO 26964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:40:22.415  INFO 26964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:40:22.489  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:40:22.501  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 5.326 seconds (JVM running for 996.837)
+2024-04-11 15:40:22.509  INFO 26964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-11 15:40:23.808  INFO 26964 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-04-11 15:40:23.944  INFO 26964 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-11 15:40:23.959  INFO 26964 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:40:23.964  INFO 26964 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-04-11 15:40:23.969  INFO 26964 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-04-11 15:40:24.077  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 26964 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:40:24.078  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:40:24.712  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:40:24.742  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:40:24.998  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:40:25.000  INFO 26964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:40:25.001  INFO 26964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:40:25.053  INFO 26964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:40:25.054  INFO 26964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 973 ms
+2024-04-11 15:40:25.221  INFO 26964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:40:25.234  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-04-11 15:40:25.308  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-04-11 15:40:25.308  INFO 26964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:40:25.547  INFO 26964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:40:25.548  INFO 26964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:40:26.054  WARN 26964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:40:26.196 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:40:26.273 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:40:26.926 DEBUG 26964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:40:26.947 DEBUG 26964 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:40:27.303  INFO 26964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:40:27.320  INFO 26964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:40:27.416  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:40:27.451  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 3.427 seconds (JVM running for 1001.787)
+2024-04-11 15:40:27.474  INFO 26964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-11 15:40:31.859  INFO 26964 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-11 15:40:31.860  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-11 15:40:31.860 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-11 15:40:31.861 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-11 15:40:31.861 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-11 15:40:31.865 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b1dbd7c
+2024-04-11 15:40:31.866 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@e7817635
+2024-04-11 15:40:31.867 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-11 15:40:31.868  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-04-11 15:40:31.870 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:40:31.871 DEBUG 26964 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:40:31.884 DEBUG 26964 --- [http-nio-8083-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:40:36.849 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:40:36.850 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ciudad, apellido, calle, nombre, edad, pais]]
+2024-04-11 15:40:36.852 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:41:45.810 DEBUG 26964 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:41:45.812 DEBUG 26964 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:41:45.815 DEBUG 26964 --- [http-nio-8083-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:42:44.014 DEBUG 26964 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:42:44.015 DEBUG 26964 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ciudad, apellido, calle, nombre, edad, pais]]
+2024-04-11 15:42:44.017 DEBUG 26964 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:47:35.449  INFO 26964 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-04-11 15:47:35.633  INFO 26964 --- [Thread-23] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-11 15:47:35.635  INFO 26964 --- [Thread-23] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-11 15:47:35.656  INFO 26964 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:47:35.662  INFO 26964 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-04-11 15:47:35.676  INFO 26964 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-04-11 15:47:36.050  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 26964 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:47:36.051  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:47:36.555  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:47:36.598  INFO 26964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:47:36.888  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:47:36.890  INFO 26964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:47:36.891  INFO 26964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:47:36.937  INFO 26964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:47:36.938  INFO 26964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 884 ms
+2024-04-11 15:47:37.089  INFO 26964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:47:37.100  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-04-11 15:47:37.176  INFO 26964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-04-11 15:47:37.177  INFO 26964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:47:37.392  INFO 26964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:47:37.394  INFO 26964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:47:37.723  WARN 26964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:47:37.793 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:47:37.828 DEBUG 26964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:47:38.421 DEBUG 26964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:47:38.438 DEBUG 26964 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:47:38.770  INFO 26964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:47:38.781  INFO 26964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:47:38.851  INFO 26964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:47:38.868  INFO 26964 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 2.859 seconds (JVM running for 1433.204)
+2024-04-11 15:47:38.875  INFO 26964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-11 15:47:41.524  INFO 26964 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-11 15:47:41.525  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-11 15:47:41.526 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-11 15:47:41.526 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-11 15:47:41.527 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-11 15:47:41.530 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e24b9a03
+2024-04-11 15:47:41.532 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@c10f2934
+2024-04-11 15:47:41.534 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-11 15:47:41.535  INFO 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2024-04-11 15:47:41.537 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:47:41.539 DEBUG 26964 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:47:41.557 DEBUG 26964 --- [http-nio-8083-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:47:48.175 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:47:48.176 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[root, persona, nombre, apellido, edad, direccion, calle, ciudad, pais]]
+2024-04-11 15:47:48.178 DEBUG 26964 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:49:13.935 DEBUG 26964 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:49:13.936 DEBUG 26964 --- [http-nio-8083-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:49:13.939 DEBUG 26964 --- [http-nio-8083-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:51:04.773 DEBUG 26964 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:51:04.774 DEBUG 26964 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[root, persona, nombre, apellido, edad, direccion, calle, ciudad, pais]]
+2024-04-11 15:51:04.776 DEBUG 26964 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:52:59.682 DEBUG 26964 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:52:59.683 DEBUG 26964 --- [http-nio-8083-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:52:59.686 DEBUG 26964 --- [http-nio-8083-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:53:04.596 DEBUG 26964 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:53:04.597 DEBUG 26964 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[root, persona, nombre, apellido, edad, direccion, calle, ciudad, pais]]
+2024-04-11 15:53:04.599 DEBUG 26964 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:53:18.870  INFO 26964 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:53:18.875  INFO 26964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-04-11 15:53:18.880  INFO 26964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-04-11 15:54:20.387  INFO 19560 --- [restartedMain] c.h.s.ServicesentityApplication          : Starting ServicesentityApplication using Java 11.0.10 on 592448L2561 with PID 19560 (D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity\target\classes started by pra_msanchezs in D:\Proyectos_BN\microservicios\Proyecto_MyHubMultiServices\servicesentity)
+2024-04-11 15:54:20.389  INFO 19560 --- [restartedMain] c.h.s.ServicesentityApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-04-11 15:54:20.445  INFO 19560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-11 15:54:20.446  INFO 19560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-11 15:54:21.633  INFO 19560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 15:54:21.706  INFO 19560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2024-04-11 15:54:22.518  INFO 19560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2024-04-11 15:54:22.528  INFO 19560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-11 15:54:22.528  INFO 19560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-04-11 15:54:22.626  INFO 19560 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-11 15:54:22.627  INFO 19560 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2181 ms
+2024-04-11 15:54:22.862  INFO 19560 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 15:54:22.911  INFO 19560 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-11 15:54:23.075  INFO 19560 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 15:54:23.187  INFO 19560 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-11 15:54:23.337  INFO 19560 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-11 15:54:23.375  INFO 19560 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-11 15:54:24.185  INFO 19560 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 15:54:24.197  INFO 19560 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:54:24.627  WARN 19560 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 15:54:24.738 DEBUG 19560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-11 15:54:24.826 DEBUG 19560 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-04-11 15:54:25.234 DEBUG 19560 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-04-11 15:54:25.247 DEBUG 19560 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-11 15:54:25.564  INFO 19560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-11 15:54:25.569  INFO 19560 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-11 15:54:25.617  INFO 19560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2024-04-11 15:54:25.629  INFO 19560 --- [restartedMain] c.h.s.ServicesentityApplication          : Started ServicesentityApplication in 5.638 seconds (JVM running for 6.063)
+2024-04-11 15:54:29.980  INFO 19560 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-11 15:54:29.981  INFO 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-11 15:54:29.981 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-11 15:54:29.982 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-11 15:54:29.982 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-11 15:54:29.983 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2d298d3f
+2024-04-11 15:54:29.984 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@197b1b19
+2024-04-11 15:54:29.984 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-11 15:54:29.985  INFO 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-11 15:54:29.997 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/entidad/plantilla", parameters={}
+2024-04-11 15:54:30.007 DEBUG 19560 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hubmultiservice.servicesentity.controller.EntidadController#plantillaSaveUdpate(Plantilla)
+2024-04-11 15:54:30.087 DEBUG 19560 --- [http-nio-8083-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Plantilla(id=null, interfaces=null, interfazId=1, descripcion=string, plantillaType=REQUEST, docType (truncated)...]
+2024-04-11 15:54:30.207 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-11 15:54:30.208 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[personas, nombre, apellido, edad, direccion, calle, ciudad, pais, nombre, apellido, edad, direccion (truncated)...]
+2024-04-11 15:54:30.220 DEBUG 19560 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-04-11 15:55:25.104  INFO 19560 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 15:55:25.113  INFO 19560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-11 15:55:25.121  INFO 19560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

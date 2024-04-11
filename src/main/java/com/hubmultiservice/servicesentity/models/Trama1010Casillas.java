@@ -9,7 +9,8 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Request {
-    private String cabecera;
-    private String cuerpo;
+public class Trama1010Casillas {
+
+	private String CODCAS;
+	private String DESCAS;
 }

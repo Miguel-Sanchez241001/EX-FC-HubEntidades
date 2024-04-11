@@ -1,0 +1,24 @@
+{
+  "personas": [
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "edad": 30,
+      "direccion": {
+        "calle": "Calle Falsa 123",
+        "ciudad": "Ciudad de Ejemplo",
+        "pais": "País de Prueba"
+      }
+    },
+    {
+      "nombre": "María",
+      "apellido": "Gómez",
+      "edad": 25,
+      "direccion": {
+        "calle": "Avenida Verdadera 456",
+        "ciudad": "Ciudad de Ejemplo",
+        "pais": "País de Prueba"
+      }
+    }
+  ]
+}

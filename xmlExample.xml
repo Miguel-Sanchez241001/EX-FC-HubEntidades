@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <persona>
+    <nombre>Juan</nombre>
+    <apellido>Pérez</apellido>
+    <edad>30</edad>
+    <direccion>
+      <calle>Calle Falsa 123</calle>
+      <ciudad>Ciudad de Ejemplo</ciudad>
+      <pais>País de Prueba</pais>
+    </direccion>
+  </persona>
+  <persona>
+    <nombre>María</nombre>
+    <apellido>Gómez</apellido>
+    <edad>25</edad>
+    <direccion>
+      <calle>Avenida Verdadera 456</calle>
+      <ciudad>Ciudad de Ejemplo</ciudad>
+      <pais>País de Prueba</pais>
+    </direccion>
+  </persona>
+</root>
