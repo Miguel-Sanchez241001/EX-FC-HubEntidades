@@ -18,6 +18,7 @@ import com.hubmultiservice.servicesentity.models.entidad.Entidad;
 import com.hubmultiservice.servicesentity.models.entidad.Interfaces;
 import com.hubmultiservice.servicesentity.models.entidad.Plantilla;
 import com.hubmultiservice.servicesentity.models.entidad.enums.DocType;
+import com.hubmultiservice.servicesentity.repository.CampoTagRepo;
 import com.hubmultiservice.servicesentity.repository.EntidadRepo;
 import com.hubmultiservice.servicesentity.repository.InterfazRepo;
 import com.hubmultiservice.servicesentity.repository.PlantillaRepo;
@@ -66,6 +67,8 @@ public class EntidadController {
     private PlantillaRepo plantillaRepo;
 
 
+    @Autowired private CampoTagRepo campoTagRepo;
+
     private static final Logger logger = LoggerFactory.getLogger(EntidadController.class);
 
 
@@ -84,29 +87,45 @@ public class EntidadController {
        return  ResponseEntity.ok( interfazRepo.save(interfaces));
    
     }
+ 
+
+    @PostMapping("/campos")
+    public String postMethodName(@RequestBody List<CamposTag> campos) {
+        if (!campos.isEmpty()) {
+            campos.stream().forEach(campo -> {
+               Plantilla  pt = plantillaRepo.findById(campo.getPlantillaId()).get();
+               campo.setPlantilla(pt);
+               campoTagRepo.save(campo);
+            
+            } );
+        }
+        
+
+
+
+
+        String xmlString = "<soapenv:Body>\n" +
+        "<bean:consultar>\n" +
+        "<tramaEntrada>EXAMPLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</tramaEntrada>\n" +
+        "</bean:consultar>\n" +
+        "</soapenv:Body>\n" +
+        "</soapenv:Envelope>";
+
+        return xmlString;
+    }
+    
+
+
+
+
 
     // @PostMapping("/plantilla")
-    // public  ResponseEntity<Plantilla>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) {
-    //     Interfaces interfaz =  interfazRepo.findById(plantilla.getInterfazId()).get();
-    //     plantilla.setInterfaces(interfaz);
-    //     plantilla.setContenido(Base64Utils.decodeFromString(plantilla.getContenidoSTR()));
-
-
-
-
-
-
-
-
-
-
-    //     return ResponseEntity.status(HttpStatus.CREATED).body(plantillaRepo.save(plantilla)); 
-    // }
-
-
+    // public  ResponseEntity<List<String>>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) throws Exception {
+    //  
     @PostMapping("/plantilla")
-    public  ResponseEntity<List<String>>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) throws Exception {
-        Interfaces interfaz =  interfazRepo.findById(plantilla.getInterfazId()).get();
+    public  ResponseEntity<Plantilla>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) throws Exception {
+     
+    Interfaces interfaz =  interfazRepo.findById(plantilla.getInterfazId()).get();
         plantilla.setInterfaces(interfaz);
         plantilla.setContenido(Base64Utils.decodeFromString(plantilla.getContenidoSTR()));
 
@@ -117,8 +136,9 @@ public class EntidadController {
         byte[] decodedBytes = Base64Utils.decodeFromString(plantilla.getContenidoSTR());
     
         String data = "";
+        logger.info(new String(decodedBytes));
         if (plantillaGuarda.getDocType().equals(DocType.XML)) {
-            logger.info(new String(decodedBytes));
+            
             System.out.println(new String(decodedBytes));
             String xmlString = new String(decodedBytes);
             Document document =  parseXML(xmlString);
@@ -138,15 +158,15 @@ public class EntidadController {
         }
         if (plantillaGuarda.getDocType().equals(DocType.JSON)) {
 
-            logger.info(new String(decodedBytes));
-
+ 
             camposEncontrados = new LectorJsonDocTag().readKeys(plantillaGuarda.getContenido());
 
             JsonNode rootNode = parseJson(new String(decodedBytes));
+
             logger.info("JSON original: " + rootNode.toPrettyString());
 
             // Modificar el valor de la clave 'city'
-             modifyValue(rootNode,"nombre", "JUANITO");
+            modifyValue(rootNode,"nombre", "JUANITO");
             modifyValue(rootNode,"apellido", "SANCHEZ");
             modifyValue(rootNode,"edad", "9999");
             modifyValue(rootNode,"ciudad", "Lima");
@@ -158,7 +178,7 @@ public class EntidadController {
         }
         camposEncontrados.add(data);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(camposEncontrados); 
+        return ResponseEntity.status(HttpStatus.CREATED).body(plantillaGuarda); 
     }
 
     public void modifyValue(JsonNode node, String key, String newValue) {

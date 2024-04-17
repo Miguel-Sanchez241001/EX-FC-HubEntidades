@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -15,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 @Entity
-@Table(name = "f04_campos")
+@Table(name = "f04_campos" , uniqueConstraints = @UniqueConstraint(columnNames = {"f03_plantillaId", "f04_etiqueta"}))
 @Getter
 @Setter
 @ToString
@@ -30,17 +31,15 @@ public class CamposTag {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)  // El id se incluye en las respuestas, no en las solicitudes
     private Integer id;
     
-// Este campo es para recibir el ID de la entidad en el JSON
-@Column(name = "f03_plantillaId", insertable = false, updatable = false)
-private Integer plantillaId;
+    // Este campo es para recibir el ID de la entidad en el JSON
+    @Column(name = "f03_plantillaId", insertable = false, updatable = false)
+    private Integer plantillaId;
 
     @Column(name = "f04_etiqueta",nullable = false)
     private String etiqueta;
 
     @Column(name = "f04_valor",nullable = false)
     private String valor;
-
-
 
     @ManyToOne
     @JoinColumn(name = "f03_plantillaId")
