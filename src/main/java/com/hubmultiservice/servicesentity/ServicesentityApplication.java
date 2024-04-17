@@ -13,7 +13,7 @@ public class ServicesentityApplication {
 	}
 
 
-		@Bean
+	@Bean
 	public GroupedOpenApi myApi() {
 		return GroupedOpenApi.builder()
 			.group("Multi Servicio")

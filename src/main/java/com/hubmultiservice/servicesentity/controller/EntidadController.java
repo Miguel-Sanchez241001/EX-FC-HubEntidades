@@ -90,28 +90,67 @@ public class EntidadController {
  
 
     @PostMapping("/campos")
-    public String postMethodName(@RequestBody List<CamposTag> campos) {
-        if (!campos.isEmpty()) {
+    public String postMethodName(@RequestBody List<CamposTag> campos) throws SAXException, IOException, ParserConfigurationException, TransformerException {
+        final Plantilla[] ptHolder = new Plantilla[1];  // Contenedor para la plantilla
+        String data = " ";
+        if (!campos.isEmpty()) {    
             campos.stream().forEach(campo -> {
                Plantilla  pt = plantillaRepo.findById(campo.getPlantillaId()).get();
                campo.setPlantilla(pt);
                campoTagRepo.save(campo);
-            
+               ptHolder[0] = pt;  // Guardar en el contenedor
+
             } );
         }
+        // Aquí podrías hacer algo con ptHolder[0], como pasarla a otra función
+    if (ptHolder[0] != null) {
+        Plantilla  plantillaGuarda = ptHolder[0];
+        byte[] decodedBytes =  plantillaGuarda.getContenido();   
+            if (plantillaGuarda.getDocType().equals(DocType.XML)) {
+           
+            System.out.println(new String(decodedBytes));
+            String xmlString = new String(decodedBytes);
+            Document document =  parseXML(xmlString);
+            System.out.println("Modificando el documento XML...");
+
+            
+            List<CamposTag> camposSave = campoTagRepo.findByPlantilla(plantillaGuarda);
+                for (CamposTag cp : camposSave) {
+                    modifyElementContent(document,cp.getEtiqueta(), cp.getValor());
+                }
+          
+     
+            String newXML =  generateXML(document);
+            logger.info("Nuevo XML generado:");
+            logger.info(newXML);
+            data =  newXML; 
+        }
+        if (plantillaGuarda.getDocType().equals(DocType.JSON)) {
+
+ 
+ 
+            JsonNode rootNode = parseJson(new String(decodedBytes));
+
+            logger.info("JSON original: " + rootNode.toPrettyString());
+
+            List<CamposTag> camposSave = campoTagRepo.findByPlantilla(plantillaGuarda);
+            for (CamposTag cp : camposSave) {
+                modifyValue(rootNode,cp.getEtiqueta(), cp.getValor());
+ 
+            }
+            logger.info("JSON modificado: " + rootNode.toPrettyString());
+            data =  rootNode.toPrettyString();
+
+        }
+      
+    }
         
 
 
 
+        
 
-        String xmlString = "<soapenv:Body>\n" +
-        "<bean:consultar>\n" +
-        "<tramaEntrada>EXAMPLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</tramaEntrada>\n" +
-        "</bean:consultar>\n" +
-        "</soapenv:Body>\n" +
-        "</soapenv:Envelope>";
-
-        return xmlString;
+        return data;
     }
     
 
@@ -119,11 +158,11 @@ public class EntidadController {
 
 
 
-    // @PostMapping("/plantilla")
-    // public  ResponseEntity<List<String>>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) throws Exception {
-    //  
     @PostMapping("/plantilla")
-    public  ResponseEntity<Plantilla>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) throws Exception {
+    public  ResponseEntity<List<String>>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) throws Exception {
+     
+    // @PostMapping("/plantilla")
+    // public  ResponseEntity<Plantilla>   plantillaSaveUdpate(@RequestBody Plantilla plantilla) throws Exception {
      
     Interfaces interfaz =  interfazRepo.findById(plantilla.getInterfazId()).get();
         plantilla.setInterfaces(interfaz);
@@ -177,8 +216,10 @@ public class EntidadController {
 
         }
         camposEncontrados.add(data);
+        camposEncontrados.add(plantillaGuarda.toString());
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(plantillaGuarda); 
+        //return ResponseEntity.status(HttpStatus.CREATED).body(plantillaGuarda); 
+        return ResponseEntity.status(HttpStatus.CREATED).body(camposEncontrados); 
     }
 
     public void modifyValue(JsonNode node, String key, String newValue) {

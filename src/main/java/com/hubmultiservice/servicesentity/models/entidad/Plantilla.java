@@ -41,6 +41,7 @@ public class Plantilla {
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "f02_interfazId")
+    @ToString.Exclude
     private Interfaces interfaces;
     // Este campo es para recibir el ID de la entidad en el JSON
     @Column(name = "f02_interfazId", insertable = false, updatable = false)
@@ -60,12 +61,15 @@ public class Plantilla {
     @Column(name = "f03_plantilla",nullable = false)
     @Lob
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)  // El id se incluye en las respuestas, no en las solicitudes
+    @ToString.Exclude
     private byte[] contenido;
 
     @Transient
+    @ToString.Exclude
     private String contenidoSTR;
 
     @OneToMany(mappedBy = "plantilla")
     @JsonProperty(access = JsonProperty.Access.READ_ONLY) 
+    @ToString.Exclude
     private Set<CamposTag> camposTags;
 }
