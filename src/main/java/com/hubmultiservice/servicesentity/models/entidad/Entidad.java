@@ -30,7 +30,7 @@ public class Entidad {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "f01_entidadId",nullable = false)
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)  // El id se incluye en las respuestas, no en las solicitudes
+  //  @JsonProperty(access = JsonProperty.Access.READ_ONLY)  // El id se incluye en las respuestas, no en las solicitudes
     private Integer id;
 
     @Column(name = "f01_nombre",nullable = false)

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @RestController
-@RequestMapping("/v1" )
+@RequestMapping("/api/v1" )
 public class GenericController {
     
     @Autowired

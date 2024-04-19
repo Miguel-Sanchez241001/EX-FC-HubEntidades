@@ -83,6 +83,7 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<finalName>genericservice</finalName>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  app:
+    container_name: "genericservicesv1"
+    build: .
+    ports:
+      - "8083:8080"
+    environment:
+      - BD_URL=jdbc:postgresql://instance-pg-local-desa:5432/bdesarrollo
+      - BD_USERNAME=bd_desa
+      - BD_PASS=74132882SS
+    depends_on:
+      - bdpostgresdesa
+
+  bdpostgresdesa:
+    container_name: "instance-pg-local-desa"
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=bd_desa
+      - POSTGRES_PASSWORD=74132882SS
+      - POSTGRES_DB=bdesarrollo
+    
+volumes:
+  posrgres-data:
