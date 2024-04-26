@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns2:consultarResponse xmlns:ns2="http://beans.ws.integracionexterno.entidad.com">
+			<consultarReturn>0210F23880010E808060000000004000017F190000000000000000000350000000000000000101215100200027415100210121012060021360000274     000000999025    604002100250012  0085 RPTA CONECTOR                          58603                              01  0027010302727              001                                   0000010000000000000000000000000000462573            000000000000000000000000000010000000000                                  001RECIBO DE AGUA 60400                                                                                00010000000000000001FFFFFFFFFFFFFFFFFFFF                                                                                                                                                                                                                         033001492150     610001     001     023010302727              044                                703         000000000                </consultarReturn>
+		</ns2:consultarResponse>
+	</soap:Body>
+</soap:Envelope>

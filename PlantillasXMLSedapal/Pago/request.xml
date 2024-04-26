@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bean="http://beans.ws.integracionexterno.entidad.com" >
+<soapenv:Body>
+<bean:registrarPago>
+<tramaEntrada>010007938191          607200000100029999070018RIVERA TORRES ANIANO                                                  0000000000011236461000070000000000000793819120191015PEN000000000008910000000000000000000000000000000000000000000000000000000000055000000000000000                                                  000000000008910010000000000000000000009769257202311091030580000005600000000</tramaEntrada></bean:registrarPago>
+</soapenv:Body>
+</soapenv:Envelope>

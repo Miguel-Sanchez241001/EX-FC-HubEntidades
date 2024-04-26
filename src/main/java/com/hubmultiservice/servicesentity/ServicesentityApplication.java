@@ -17,7 +17,7 @@ public class ServicesentityApplication {
 	public GroupedOpenApi myApi() {
 		return GroupedOpenApi.builder()
 			.group("Multi Servicio")
-			.pathsToMatch("/v1/**","/entidad/**" )
+			.pathsToMatch("/api/v1/**","/entidad/**" )
 			.build();
 	}
 }

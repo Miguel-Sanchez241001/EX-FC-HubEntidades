@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:mib="http://www.mibanco.com.pe/service/enviosms/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header/>
+	<soapenv:Body>
+		<data>
+			<responseTrama>010007938191          607200000102020000070018RIVERA TORRES ANIANO                                                  0000000000011236461000070000000000000793819120191015PEN000000000008910000000000000000000000000000000000000000000000000000000000055000000000000000                                                  000000000008910010000000000000000000009769257202311091030580000005600000000</responseTrama>
+		</data>
+	</soapenv:Body>
+</soapenv:Envelope>

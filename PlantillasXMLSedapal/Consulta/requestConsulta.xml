@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bean="http://beans.ws.integracionexterno.entidad.com" >
+	<soapenv:Body>
+		<bean:consultar>
+			<tramaEntrada>0200B238848188E0804000000000400001603500000000000000001012151002000274151002101210120001506002136060021360000274     9025    380000         BANCO DE LA NACION                      60400210000000000000000000000000015703                              01  0027                       001                                                                         040960000000000000033001492150     610001     001     023010302727              </tramaEntrada>
+		</bean:consultar>
+	</soapenv:Body>
+</soapenv:Envelope>
