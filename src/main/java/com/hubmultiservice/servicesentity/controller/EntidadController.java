@@ -46,6 +46,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.Base64Utils;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -55,6 +57,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @RestController
 @RequestMapping("entidad")
+@CrossOrigin
 public class EntidadController {
     
 
@@ -84,7 +87,11 @@ public class EntidadController {
         return servicesentity.updateEntidad(entidad);        
     }
 
-
+    @GetMapping("/")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public ResponseFront entidades() {
+        return servicesentity.showEntidades();        
+    }
 
     @PostMapping("/interfaz")
     @ResponseStatus(HttpStatus.CREATED)

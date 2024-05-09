@@ -134,5 +134,18 @@ public class ImpServiceEntidad implements ServicesEntidad {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'updateCampo'");
     }
+
+    @Override
+    public ResponseFront showEntidades() {
+        ResponseFront respuest = ResponseFront
+        .builder()
+        .data(entidadRepository.findAll())
+        .build();
+        if (respuest.getData()!= null) {
+            respuest.setCodigo( Constantes.COG_EXITO);
+            respuest.setMensaje(Constantes.MSJ_EXITO);
+        }
+        return respuest;
+    }
     
 }

@@ -13,6 +13,7 @@ public interface ServicesEntidad {
 
     public ResponseFront saveEntidad (Entidad entidad);
     public ResponseFront updateEntidad (Entidad entidad);
+    public ResponseFront showEntidades ();
 
 
     public ResponseFront saveInterfaz (Interfaces interfaz);
